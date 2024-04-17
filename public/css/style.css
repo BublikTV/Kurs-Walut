@@ -1,0 +1,147 @@
+/* Resetowanie podstawowych stylów */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url('/images/tlo.png'); /* Tło strony */
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background: transparent;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.project-title {
+    background-color: #4CAF50; /* Zielone tło */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+.home-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #008cba; /* Niebieski */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.home-button:hover {
+    background-color: #007ba7; /* Ciemniejszy niebieski */
+    color: white;
+}
+
+form {
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c; /* Zielony */
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .home-button:hover {
+    transform: scale(1.05); /* Powiększa przycisk przy najechaniu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodaje cień dla efektu głębi */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.advertisement {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.qr-code:hover {
+    max-width: 300px; 
+    margin: 20px auto;
+    display: block;
+    transform: rotate(5deg); /* Delikatnie obraca kod QR przy najechaniu */
+    transition: transform 0.3s ease-in-out;
+}
+
+#results {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#results h2 {
+    color: #333;
+}
+
+#results p:hover {
+    background-color: #f4f4f4; /* Zmienia tło elementu listy przy najechaniu */
+    transition: background-color 0.3s ease-in-out;
+}

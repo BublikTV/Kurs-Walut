@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursy Walut</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Dodanie Chart.js -->
+</head>
+<body>
+    <header>
+        <div class="project-title">Projekt - Zaawansowane technologie internetowe - Sofiia Sokolovska 81483</div>
+        <a href="#" class="home-button" id="reset-view">Kursy Walut</a>
+    </header>
+    <form id="currency-form">
+        <label for="baseCurrency">Wybierz walutę bazową:</label>
+        <select id="baseCurrency" name="baseCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UAH">UAH</option>
+        </select>
+        <button type="submit">Pokaż kursy</button>
+    </form>
+    <div class="advertisement">
+        <h3>Zaobserwuj moją stronę na Instagramie!</h3>
+        <a href="https://www.instagram.com/_sofiia.sokolovska_/?img_index=1" target="_blank">
+            <img src="/images/QR.jpg" alt="Kod QR" class="qr-code">
+        </a>
+        <p>UWAGA: Koty</p>
+    </div>
+    <div id="results"></div>
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="currencyChart"></canvas>
+    </div>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>
